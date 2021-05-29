@@ -18,7 +18,7 @@ namespace PrimeNumbers
 
             int foundPrimeNumbers = 0;
 
-            for (int i = rangeMin; i < rangeMax; i++)
+            for (int i = rangeMin; i <= rangeMax; i++)
             {
                 if (IsPrime(i))
                 {
@@ -31,7 +31,7 @@ namespace PrimeNumbers
 
             bool IsPrime(int number)
             {
-                if (number == 1) return false;
+                if (number == 0 || number == 1) return false;
 
                 for (int i = 2; i < number; i++)
                 {
